@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#1f306e</color>
+    <color name="colorSecondary">#553772</color>
+    <color name="colorTertiary">#8f3b76</color>
+    <color name="colorAccent">#f5487f</color>
+
+    <color name="colorSurface">#e3f6f5</color>
+    <color name="colorSurfaceDark">#2c8782</color>
+
+    <color name="colorBgGradientStart">#E0E0E0</color>
+
+    <!-- Colores para tema oscuro -->
+    <!--<color name="colorPrimaryDark">#1f306e</color>
+    <color name="colorSecondaryDark">#553772</color>
+    <color name="colorTertiaryDark">#8f3b76</color>
+    <color name="colorAccentDark">#f5487f</color>
+
+    <color name="colorSurfaceTemaDark">#e3f6f5</color>
+    <color name="colorSurfaceDarkTemaDark">#2c8782</color>
+
+    <color name="colorBgGradientStartTemaDark">#E0E0E0</color>-->
+
+</resources>

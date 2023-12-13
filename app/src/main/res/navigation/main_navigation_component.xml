@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation_component"
+    app:startDestination="@id/mainNavMiContinente">
+
+    <fragment
+        android:id="@+id/mainNavMiContinente"
+        android:name="com.l20290975.mycountryapp.paises.fragments.PorContinenteFragment"
+        android:label="Paises Por Continente"
+        tools:layout="@layout/fragment_por_continente" />
+    <fragment
+        android:id="@+id/mainNavMiBuscar"
+        android:name="com.l20290975.mycountryapp.paises.fragments.BuscarPaisesFragment"
+        android:label="Buscar País Por Nombre"
+        tools:layout="@layout/fragment_buscar_paises" />
+    <fragment
+        android:id="@+id/mainNavMiPerfil"
+        android:name="com.l20290975.mycountryapp.perfil.fragments.PerfilFragment"
+        android:label="Desarrollador"
+        tools:layout="@layout/fragment_perfil" />
+</navigation>

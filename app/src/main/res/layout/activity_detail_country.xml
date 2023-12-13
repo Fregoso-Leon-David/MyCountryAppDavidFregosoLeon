@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30sp"
+    android:background="@drawable/bg_rectangle_shape"
+    tools:context=".paises.activities.DetailCountryActivity">
+
+    <TextView
+        android:id="@+id/countryItemtvPaisNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/textTittle.bold.center"
+        android:text="@string/countryItemTvCountryNameExample"
+        android:layout_marginHorizontal="16sp"
+        android:layout_marginTop="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/countryItemCountryBox"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/countryItemCountryBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/countryItemtvPaisNombre"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/countryItemSivPaisImg"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_margin="14sp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@id/countryItemTvPaisCapitalBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/roundedShapeImage"
+            app:srcCompat="@drawable/ic_world_25"
+            app:strokeColor="?attr/colorPrimary"
+            app:strokeWidth="5sp" />
+
+        <TextView
+            android:id="@+id/countryItemTvPaisCapitalBox"
+            style="@style/textSubtitle.center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:layout_marginBottom="16sp"
+            android:text="Capital:"
+            app:layout_constraintBottom_toTopOf="@id/countryItemTvCapital"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/countryItemSivPaisImg" />
+
+        <TextView
+            android:id="@+id/countryItemTvCapital"
+            style="@style/textSubSubtitle.center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8sp"
+            android:text="Ciudad de México:"
+            app:layout_constraintBottom_toTopOf="@+id/countryItemTvCountryPopulationLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/countryItemTvPaisCapitalBox"
+
+            />
+
+        <TextView
+            android:id="@+id/countryItemTvCountryPopulationLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/textSubtitle.center"
+            android:text="Población:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/countryItemTvCapital"
+            app:layout_constraintBottom_toTopOf="@+id/countryItemTvCountryPopulation"
+            />
+
+        <TextView
+            android:id="@+id/countryItemTvCountryPopulation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/textSubSubtitle.center"
+            android:text="120,000,000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/countryItemTvCountryPopulationLabel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

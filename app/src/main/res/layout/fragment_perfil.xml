@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".perfil.fragments.PerfilFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/perfilSivDeveloper"
+            android:layout_width="250sp"
+            android:layout_height="250sp"
+            android:layout_margin="26dp"
+            app:shapeAppearanceOverlay="@style/leafShapeImage"
+            android:scaleType="centerCrop"
+            app:strokeWidth="5sp"
+            app:strokeColor="@color/colorPrimary"
+            app:srcCompat="@drawable/nice"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/perfilTvNombreLabel"
+            />
+
+        <TextView
+            android:id="@+id/perfilTvNombreLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            style="@style/textSubtitle.center"
+            android:text="Nombre:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/perfilSivDeveloper"
+            app:layout_constraintBottom_toTopOf="@+id/perfilTvNombreDev"
+            />
+
+        <TextView
+            android:id="@+id/perfilTvNombreDev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textSubSubtitle.center"
+            android:text="David Fregoso Leon"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/perfilTvNombreLabel"
+            app:layout_constraintBottom_toTopOf="@+id/perfilTvNCLabel"
+            />
+
+        <TextView
+            android:id="@+id/perfilTvNCLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textSubtitle.center"
+            android:text="Número de control:"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/perfilTvNombreDev"
+            app:layout_constraintBottom_toTopOf="@+id/perfilTvNCDev"
+            />
+
+        <TextView
+            android:id="@+id/perfilTvNCDev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textSubSubtitle.center"
+            android:text="L20290975"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/perfilTvNCLabel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

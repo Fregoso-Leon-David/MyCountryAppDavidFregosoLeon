@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mainNavMiContinente"
+        android:icon="@drawable/ic_world_25"
+        android:title="@string/mainNavMiContinente"
+        android:enabled="true"
+        />
+
+    <item
+        android:id="@+id/mainNavMiBuscar"
+        android:icon="@drawable/ic_map_search_25"
+        android:title="@string/mainNavMiBuscar"
+        android:enabled="true"
+        />
+
+    <item
+        android:id="@+id/mainNavMiPerfil"
+        android:icon="@drawable/ic_profile_25"
+        android:title="@string/mainNavMiPerfil"
+        android:enabled="true"
+        />
+</menu>
